@@ -4,6 +4,6 @@ COPY plik.cpp .
 
 
 
-FROM cpp:latest
+FROM scratch
 COPY --from=builder /go-cpp-hello-world/plik.cpp .
 CMD ["plik.cpp"]]
